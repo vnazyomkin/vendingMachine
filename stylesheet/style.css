@@ -1,0 +1,148 @@
+/*body * { background-color: rgba(255,0,0,.2); }*/
+/*body * * { background-color: rgba(16, 78, 0, 0.2); }*/
+/*body * * * { background-color: rgba(0,0,255,.2); }*/
+/*body * * * * { background-color: rgba(255,0,255,.2); }*/
+/*body * * * * * { background-color: rgba(0,255,255,.2); }*/
+/*body * * * * * * { background-color: rgba(255,255,0,.2); }*/
+/*body * * * * * * * { background-color: rgba(255,0,0,.2); }*/
+.main{
+    min-width: 800px;
+    max-width: 1200px;
+    min-height: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 30% 1fr 30% 1fr 30% 1fr;
+    grid-template-rows: 1fr 20% 1fr 18% 1fr 18% 1fr 18% 1fr 18%;
+    color: gray;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */ 
+}
+.interactive{
+    grid-area: 2/2/3/-2;
+}
+.espresso{
+    grid-area: 4/2/5/3;
+}
+.latte{
+    grid-area: 4/4/5/5;
+}
+.cappuccino{
+    grid-area: 4/6/5/7;
+}
+.bananaLatte{
+    grid-area: 6/2/7/3;
+}
+.vanillaCappuccino{
+    grid-area: 6/4/7/5;
+}
+.flatWhite{
+    grid-area:6/6/7/7;
+}
+.milk{
+    grid-area: 8/2/9/3;
+}
+.cherrySyrop{
+    grid-area: 8/4/9/5;
+}
+.payment{
+    grid-area: 8/6/9/7;
+}
+.syrops{
+    grid-area: 10/2;
+}
+.result{
+    grid-area: 10/4;
+}
+
+
+.item, .interactive, .drink_name, .drink_volume{
+    font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.item, .interactive, .cancel, .result{
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.interactive1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+}
+
+.price, .complete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture, .price{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.drink_name{
+    height: 70%;
+    color: black;
+}
+.drink_volume{
+    height: 20%;
+    font: 18%;
+    color: gray;
+}
+
+.interactive-block{
+    width: 30%;
+    height: 90%;
+}
+
+.active, .cancel{
+    border-color: #b4ffba;
+    cursor: pointer;
+    color: black;
+    background: rgb(239, 247, 184);
+}
+.activePayment{
+    border-color: #00ff55;
+    background: rgb(104, 248, 148);
+    cursor: pointer;
+}
+
+.coffee_hidden{
+    visibility: hidden;
+}
+
+.coffee_visible{
+    visibility: visible;
+    cursor: pointer;
+    background: url(pic/coffe.png) no-repeat center;
+    background-size: contain;
+}
+.syrops{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.border_blink{
+    animation: blinkBorder 0.5s ease 0s infinite alternate-reverse;
+}
+
+@keyframes blinkBorder {
+    from {
+        border-color: grey;
+    }
+    to{
+        border-color: red;
+    }
+}
+

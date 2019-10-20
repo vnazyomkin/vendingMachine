@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./stylesheet/reset.css">
+        <link rel="stylesheet" href="./stylesheet/style.css">
+        <title>Кофейный автомат</title>
+    </head>
+    <body>
+        <main class="main">
+            <div class="interactive">
+                <div class="interactive-block interactive1">
+                    <div class="drink_name"></div>
+                    <div class="drink_volume"></div>
+                </div>
+                <div class="price interactive-block"></div>
+                <div class="interactive-block complete">
+                    <!--<progress class='progress-bar progress-bar_none' value = '0' max = '100'></progress>-->
+                </div>
+            </div>
+            <div class="item espresso drink standart">Эспрессо</div>
+            <div class="item latte drink standart">Латте</div>
+            <div class="item cappuccino drink standart">Капучино</div>
+            <div class="item bananaLatte drink invariable">Банановый латте</div>
+            <div class="item vanillaCappuccino drink invariable">Ванильный капучино</div>
+            <div class="item flatWhite drink invariable">Флэт уайт</div>
+            <div class="item milk ingredients">Молоко</div>
+            <div class="item cherrySyrop ingredients">Вишневый сироп</div>
+            <div class="item payment">Оплатить</div>
+            <div class = "syrops">
+                <div class = "v-milk"></div>
+                <div class = "v-cherrySyrop"></div>
+                <div class = "v-bananaSyrop"></div>
+                <div class = "v-vanillaSyrop"></div>
+                <div class = "v-glass250"></div>
+                <div class = "v-glass320"></div>
+            </div>
+            <div class="result"></div>
+            <audio autoplay src = "stylesheet/audio.mp3" type="audio/mp3"></audio>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
